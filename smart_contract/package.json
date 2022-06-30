@@ -2,10 +2,20 @@
   "name": "smart_contract",
   "version": "0.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ganache": "ganache-cli"
+    "gsn-with-ganache": "run-with-testrpc --networkId 1337 --chainId 1337 'gsn start'",
+    "ganache": "ganache-cli -d -chainId 1337",
+    "compile": "truffle compile",
+    "deploy": "truffle migrate --network kovan --reset"
   },
   "dependencies": {
-    "@opengsn/contracts": "^2.2.5"
+    "@opengsn/contracts": "^2.2.6",
+    "@opengsn/provider": "^2.2.6",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.0.8"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.15.0",
+    "chai": "^4.3.6",
+    "ganache-cli": "^6.12.2"
   }
 }

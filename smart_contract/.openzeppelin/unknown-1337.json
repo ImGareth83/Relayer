@@ -1,0 +1,94 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [],
+  "impls": {
+    "c0085206f4b0bef46366ac865fe29d8684534b94844fbf413740c829279c3de7": {
+      "address": "0x89FE03F6b1a62b3a6Aa5B98e26050a103985360A",
+      "txHash": "0x373839dff26745114d26c2bc89d3b9e163c073971ed7ea335781830db7820cf4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "BaseRelayRecipient",
+            "label": "_trustedForwarder",
+            "type": "t_address",
+            "src": "..\\@opengsn\\contracts\\src\\BaseRelayRecipient.sol:16"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "Transactions",
+            "label": "versionRecipient",
+            "type": "t_string_storage",
+            "src": "..\\project:\\contracts\\Transactions.sol:8"
+          },
+          {
+            "contract": "Transactions",
+            "label": "admin",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\Transactions.sol:10"
+          },
+          {
+            "contract": "Transactions",
+            "label": "id",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\Transactions.sol:11"
+          },
+          {
+            "contract": "Transactions",
+            "label": "transfers",
+            "type": "t_mapping(t_address,t_struct(Transfer)588_storage)",
+            "src": "..\\project:\\contracts\\Transactions.sol:29"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_struct(Transfer)588_storage)": {
+            "label": "mapping(address => struct Transactions.Transfer)"
+          },
+          "t_struct(Transfer)588_storage": {
+            "label": "struct Transactions.Transfer",
+            "members": [
+              {
+                "label": "player",
+                "type": "t_address"
+              },
+              {
+                "label": "fees",
+                "type": "t_uint256"
+              },
+              {
+                "label": "last_updated",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+PS C:\Users\garet\StudioProjects\relayer\smart_contract> npm run deploy
+
+> smart_contract@0.1.0 deploy
+> truffle migrate --network kovan --reset
+
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\Transactions.sol
+> Compiling .\node_modules\@opengsn\contracts\src\BaseRelayRecipient.sol
+> Compiling .\node_modules\@opengsn\contracts\src\interfaces\IRelayRecipient.sol
+> Artifacts written to C:\Users\garet\StudioProjects\relayer\smart_contract\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.13+commit.abaa5c0e.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x2256c8f281533d2603d6b2eae5d90a278d46d1862d484b44f6001aae5efaae4d
+   > Blocks: 3            Seconds: 13
+   > contract address:    0xd6bbd77ea7031A1d4042A60ecfb33C4f16dE49e4
+   > block number:        31738029
+   > block timestamp:     1653189736
+   > account:             0x8F884cc8552fE403597D75D1417D69baE33d415B
+   > balance:             0.20229067652963589
+   > gas used:            155210 (0x25e4a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0015521 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 31738030)
+   > confirmation number: 2 (block: 31738031)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0015521 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'Transactions'
+   ------------------------
+   > transaction hash:    0xdeeb283eef86593e9a9e4cc71c111bbe9e471c4849541cf0720e2680e30310e4
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x8DfA6a06d54E8b3450e7AEE476EEdED03fE9a06e
+   > block number:        31738037
+   > block timestamp:     1653189772
+   > account:             0x8F884cc8552fE403597D75D1417D69baE33d415B
+   > balance:             0.19635387652963589
+   > gas used:            547990 (0x85c96)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0054799 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 31738039)
+   > confirmation number: 2 (block: 31738040)
+Deployed  0x8DfA6a06d54E8b3450e7AEE476EEdED03fE9a06e
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0054799 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.007032 ETH
